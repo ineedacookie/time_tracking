@@ -1,0 +1,105 @@
+body{
+	height: 100%;
+}
+footer{
+	margin-top: 70px;
+}
+#content{
+	height: 80%;
+}
+#form-container{
+	width: 400px;
+	margin: 80px auto;
+	padding: 20px 10px 20px;
+	border: 1px solid #00AEEF;
+	border-radius: 3px;
+	text-align: center;
+}
+.error-msg{
+	color: #BA0F2A;
+	margin: 5px 0px;
+	display: inline-block;
+}
+.success-msg{
+	color: green;
+	clear: both;
+}
+#reset-div{
+	width: 280px;
+	height: 205px;
+	background-color: #fff;
+	display: none;
+	margin: 10px 0px 0px 10px;
+	z-index: 10;
+	position: fixed;
+	box-shadow: 0px 2px 10px 1px #bbb;
+	position: absolute;
+}
+#login-form input[type="text"], #login-form input[type="password"], #reset-pass-form input[type="text"]{
+	width: 250px;
+	height: 45px;
+	margin: 10px 0px;
+	padding-left: 7px;
+	font-size: 18px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	color: #333;
+}
+span.inline-checkbox{
+	display: inline-block;
+}
+span.inline-checkbox label {
+    margin-left: 10px;
+    position: relative;
+    top: -1px;
+}
+#login-form input[type="submit"], #reset-pass-form input[type="submit"] {
+    margin: 15px;
+    clear: both;
+    width: 250px;
+    height: 38px;
+    border-radius: 3px;
+    font-size: 20px;
+    color: #fff;
+    background: linear-gradient(#00AEEF 0%, #00AEEF 90%, #4e7687 90%, #4e7687 100%);
+    border: none;
+}
+.password-info, .password-reset {
+    font-size: 18px;
+}
+@media (max-width: 450px){
+	footer{
+		margin-top: 0px;
+	}
+	#form-container{
+	width: 270px;
+	margin: 40px auto;
+	padding: 20px 10px 20px;
+	border: 1px solid #00AEEF;
+	border-radius: 3px;
+	text-align: center;
+}
+	#login-form input[type="submit"], #reset-pass-form input[type="submit"] {
+    margin: 0px;
+    clear: both;
+    width: 250px;
+    height: 35px;
+    border-radius: 3px;
+    font-size: 20px;
+    color: #fff;
+    background: linear-gradient(#00AEEF 0%, #00AEEF 90%, #4e7687 90%, #4e7687 100%);
+    border: none;
+}
+#login-form input[type="text"], #login-form input[type="password"], #reset-pass-form input[type="text"]{
+	width: 250px;
+	height: 30px;
+	margin: 10px 0px;
+	padding-left: 7px;
+	font-size: 18px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	color: #333;
+}
+}

@@ -1,0 +1,28 @@
+{% extends "signin.html" %}
+
+{% block content %}
+
+<h1 class="h3 mb-3 font-weight-normal">Sign Up</h1>
+<form class="form-signin" method="post">
+    {% csrf_token %}
+    <table>
+        {% for field in form %}
+        <tr>
+            {% if field.help_text %}
+            <td>
+                <small style="display: none">{{ field.help_text }}</small>
+            </td>
+            {% endif %}
+            {% for error in field.errors %}
+            <td><p style="color: red">{{ error }}</p></td>
+            {% endfor %}
+        </tr>
+        <tr>
+            <td>{{ field.label_tag }}</td>
+            <td>{{ field }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <button type="submit">Sign up</button>
+</form>
+{% endblock %}

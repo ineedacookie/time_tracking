@@ -1,0 +1,1127 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* CREATED FOR PAYROLL PAGE
+/* www.timeclick.com/tc/software-integration.php
+/*
+/* Co-Author: Christopehr D.
+/* Updated: 12/8/16
+*/
+
+@-webkit-keyframes flash {
+	from {
+		-webkit-box-shadow: 0px 0px 0px 0px #fff;
+		-moz-box-shadow: 0px 0px 0px 0px #fff;
+		box-shadow: 0px 0px 0px 0px #fff;
+	}
+    to {
+       -webkit-box-shadow: 0px 0px 5px 5px #3CECC0;
+		-moz-box-shadow: 0px 0px 5px 5px #3CECC0;
+		box-shadow: 0px 0px 5px 5px #3CECC0;
+    }
+}
+@keyframes flash {
+    from {
+		-webkit-box-shadow: 0px 0px 0px 0px #fff;
+		-moz-box-shadow: 0px 0px 0px 0px #fff;
+		box-shadow: 0px 0px 0px 0px #fff;
+	}
+	to {
+		-webkit-box-shadow: 0px 0px 5px 5px #3CECC0;
+		-moz-box-shadow: 0px 0px 5px 5px #3CECC0;
+		box-shadow: 0px 0px 5px 5px #3CECC0;
+    }
+}
+
+
+
+@media all {
+
+
+/******************* LOG IN FORM STYLES ***************************/
+
+	body {
+		overflow-x: hidden;
+	}
+
+	#form-container { 
+		width: 400px; 
+		margin: 40px auto; 
+		padding: 20px 10px 20px; 
+		border: 1px solid #00AEEF; 
+		border-radius: 3px; 
+		text-align: center; 
+		background: linear-gradient();
+	}
+
+	#form-container h1 {
+		margin-bottom: 10px;
+	}
+
+	#form-container h3 {
+		font-style: normal;
+		font-weight: 400;
+		color: #333;	
+	}
+
+	#content img {
+		border: none;
+	    width: 293px;
+	    max-width: 715px;
+	    margin: 40px 0px 0px 5px;
+	}
+
+	.img-container {
+		margin-top: 178px;
+		text-align: center;
+	}
+
+	.intro-section {
+		width: 100%; 
+		padding: 10px 0px; 
+		height: 250px; 
+		position: relative; 
+		clear: both;
+	}
+
+	.img-section {
+		height: 175px; 
+		width: 100%; 
+		clear: both; 
+		background-color: rgb(78,118,135);
+	}
+
+	.end-section {
+		width: 100%; 
+		clear: both; 
+		padding: 10px 0px 40px;
+	}
+
+	h2.coming-soon  {
+	    margin: 10px 15px 5px;
+	    color: #333;
+	    font-size: 25px;
+	}
+
+	.error-msg { 
+		color: #BA0F2A; 
+		margin: 5px 0px; 
+		display: inline-block;
+	}
+
+	.error-msg.box { 
+		border-radius: 4px; 
+		border: 1px solid #BA0F2A; 
+		padding: 5px 5px 0px;
+	}
+
+	p { 
+		margin-bottom: 15px; 
+	}
+
+	#resend-verification-form input[type="submit"] {
+		margin: 10px 50px; 
+		clear: both; 
+		width: 250px; 
+		height: 35px; 
+		border-radius: 3px; 
+		font-size: 20px; 
+		color: #fff; 
+		background: linear-gradient(#00AEEF 0%, #00AEEF 90%, #4e7687 90%, #4e7687 100%); 
+		border: none;
+	}
+
+	#resend-verification-form input[type="submit"]:hover { 
+		background: linear-gradient(#4e7687 0%, #4e7687 90%, #4e7687 90%, #4e7687 100%); 
+	}
+
+	.password-info, .password-reset { 
+		font-size: 16px; 
+		padding-top: 5px; 
+		display: inline-block;
+	}
+
+	.reset-success {
+		margin-top: 15px; 
+		margin-bottom: 40px; 
+		display: inline-block; 
+		padding: 0px 10px;
+	}
+
+	#login-form input[type="text"], #login-form input[type="password"], #reset-pass-form input[type="text"] { 
+		width: 350px; 
+		height: 30px; 
+		margin: 10px 0px; 
+		padding-left: 7px; 
+		font-size: 16px;
+		-webkit-appearance: none;
+	   	-moz-appearance: none;
+	   	appearance: none;
+		color: #333;
+	}
+
+	#login-form input[type="submit"], #reset-pass-form input[type="submit"] { 
+		margin: 10px 0px; 
+		clear: both; 
+		width: 357px; 
+		height: 35px; 
+		border-radius: 3px; 
+		font-size: 20px; 
+		color: #fff; 
+		background: linear-gradient(#00AEEF 0%, #00AEEF 90%, #4e7687 90%, #4e7687 100%); 
+		border: none;
+	}
+
+	#login-form input[type="submit"]:hover, #reset-pass-form input[type="submit"]:hover { 
+		background: linear-gradient(#4e7687 0%, #4e7687 90%, #4e7687 90%, #4e7687 100%); 
+	}
+
+	span.inline-checkbox {
+		display: inline-block;	
+	}
+
+	span.inline-checkbox label {
+		margin-left: 10px;
+		position: relative;
+		top: -1px;
+	}
+
+	#reset-div {
+		width: 380px;
+		height: 205px;
+		background-color: #fff;
+		display: none;
+		margin: 10px 0px 0px 10px;
+		z-index: 10;
+		position: fixed;
+		box-shadow: 0px 2px 10px 1px #bbb;
+		position: absolute;
+	}
+
+	#reset-div.show-div {
+		display: block;
+		visibility: visible;
+	}
+
+	#reset-pass-form {
+		margin-bottom: 20px;	
+	}
+
+	.exit {
+		color: #00AEEF;
+		float: right;
+		margin-right: 15px;
+		font-weight: 600;
+		font-size: 18px;
+	}
+
+	.exit:hover {
+		color: #EF7669;	
+	}
+
+	#reset-pass-form input[type="text"] {
+		margin: 10px 0px 0px 0px;
+	}
+
+	#reset-pass-form input[type="submit"] {
+		margin: 20px 0px 0px 0px; 
+	}
+
+	/******************* END LOG IN STYLES ***************************/
+	/*****************************************************************/
+
+
+	/******************* INTEGRATION CENTER STYLES ***************************/
+
+	.title span {
+		float: right;
+		clear: right;	
+	}
+
+	#software-list-container { 
+		margin-top: 10px; 
+	}
+
+	#software-list-container ul { 
+		text-align: center;
+	}
+
+	#software-list-container ul li { 
+		height: 40px;
+		width: 230px;
+		padding-top: 15px;
+		margin: 0px 0px;
+		background: #eee;
+		font-size: 16px;
+	}
+
+	#software-list-container ul li.coming-soon:hover:after {
+		position: absolute;
+		top: 30px;
+		right: 70px;
+		color: #BA0F2A;
+		content: "Coming Soon"
+	}
+
+	#software-list-container ul li.selected-software { /* high-level specificity matters here */
+		color: #fff;
+		font-size: 20px;
+		top: 2px;
+		padding: 13px 0px 2px 0px;
+	}
+
+	#software-list-container ul li.selected-software.quickbooks {
+		background-color: #22a102; /* QuickBooks Green. */
+	}
+
+	#software-list-container ul li.selected-software.adp {
+		background-color: #d40f0f /* ADP Red */
+	}
+
+	#software-list-container ul li.selected-software.paychex {
+		background-color: #004b8d /* Paychex Blue */
+	}
+
+	#software-list-container ul li.selected-software.sage {
+		background-color: #00DC00 /* SAGE Green */
+	}
+
+	#software-list-container ul li.not-selected.quickbooks {
+		color: #22a102; /* QuickBooks Green. */
+	}
+
+	#software-list-container ul li.not-selected.adp {
+		color: #d40f0f /* ADP Red */
+	}
+
+	#software-list-container ul li.not-selected.paychex {
+		color: #004b8d /* Paychex Blue */
+	}
+
+	#software-list-container ul li.not-selected.sage {
+		color: #00DC00 /* SAGE Green */
+	}
+
+	#software-list-container ul li.not-selected.quickbooks:hover {
+		box-shadow: 0px 0px 1px 1px #22a102;
+	}
+
+	#software-list-container ul li.not-selected.adp:hover {
+		box-shadow: 0px 0px 1px 1px #d40f0f;
+	}
+
+	#software-list-container ul li.not-selected.paychex:hover {
+		box-shadow: 0px 0px 1px 1px #004b8d;
+	}
+
+	#software-list-container ul li.not-selected.sage:hover {
+		box-shadow: 0px 0px 1px 1px #00DC00;
+	}
+
+	#software-interface {
+		min-height: 100px;
+		margin-bottom: 20px;
+		z-index: 1;
+	}
+
+	#grey-filter {
+		width: 100%;
+		height: 100%;
+		background-color: #bbb;
+		background-color:rgba(187, 187, 187, 0.85);
+		z-index: 5;	
+		position: fixed;
+	}
+
+	#msg-box {
+		width: 960px;
+		position: fixed;
+		z-index: 99;
+		top: 250px;
+	}
+
+	.msg-container-div {
+		width: 400px;
+		font-size: 20px;
+		margin: 0px auto;
+		background-color: #fff;
+		box-shadow: 0px 4px 5px 5px #888;
+		padding: 35px;
+		border-radius: 3px;
+		transition: all ease .3s;
+		transition-delay: .5s;
+	}
+
+	#confirm-btn {
+		margin: 20px auto 0px;
+		display: block;
+		width: 100px;
+		height: 30px;
+		background: linear-gradient(to bottom, #00AEEF 0%,#00AEEF 90%,#1F7CA5 90%,#1F7CA5 100%);
+		border: none;
+		border-radius: 3px;
+		color: #fff;
+		font-size: 16px;
+	}
+
+	#confirm-btn:hover {
+		background: linear-gradient(to bottom, #1F7CA5 0%,#1F7CA5 90%,#1F7CA5 90%,#1F7CA5 100%);
+	}
+
+	.hidden {
+		display: none;	
+	}
+
+
+	/****************************************************/
+	/***** FORM FOR CHOOSING SOFTWARE - FIRST_TIME_USER 
+	*/
+
+	#choose-software-form {
+		margin-top: 30px;
+		text-align: center;
+	}
+
+	#label-qb, #label-paychex, #label-sage, #label-adp {
+		border: 1px solid #fff;	
+		padding: 8px;
+		position: relative;
+		background-color: #eee;
+	}
+
+	#label-qb:hover, #label-qb.radio-selection {
+		border-color: #22a102;
+		color: #fff;	
+		background-color:rgba(34, 161, 2, 1);
+	}
+
+	#label-paychex:hover, #label-paychex.radio-selection {
+		border-color: #004b8d;
+		color: #fff;
+		background-color:rgba(0, 75, 141, 1);
+	}
+
+	#label-sage:hover, #label-sage.radio-selection {
+		border-color: #00DC00;
+		color: #fff;
+		background-color:rgba(0, 220, 0, 1);
+	}
+
+	#label-adp:hover, #label-adp.radio-selection {
+		border-color: #d40f0f;
+		color: #fff;
+		background-color:rgba(212, 15, 15, 1);
+	}
+
+	#manual-link {
+		display: none;	
+	}
+
+	input[type="radio"] {
+		visibility: hidden;
+	}
+
+	/****************************************************/
+
+
+	#pdf-manual-banner {
+		padding: 0px 0px 20px;
+		width: 100%;
+		background-color: #666;
+	}
+
+	#pdf-manual-banner h1 {
+		color: #fff;	
+	}
+
+	#manual-list-container ul { 
+		text-align: center;
+	}
+
+	#manual-list-container ul li {
+		padding-top: 15px;
+		margin: 0px 0px;
+		color: #fff;
+		display: inline-block;
+		font-size: 16px;
+	}
+
+	#manual-list-container ul li a {
+		color: #fff;	
+	}
+
+	#manual-list-container ul li span {
+		position: relative;
+		font-size: 24px;
+		margin-left: 15px;
+		top: -20px;
+	}
+
+
+	/**************************************************/
+	/************* Interface styles *******************/
+
+	#software-interface {
+		min-height: 500px;
+	}
+
+	#wrapper {
+		min-height: 400px;
+		z-index: 1;
+	}
+
+	#wrapper h2 {
+		color: #333;
+		font-size: 26px;	
+	}
+
+	#one-time-setup, #setup-complete {
+		border: 1px solid #1d9ad3;
+		padding: 20px;
+		z-index: 1;
+	}
+
+	#one-time-setup h2 {
+		margin-bottom: 10px;	
+	}
+
+	#one-time-setup p {
+		margin-bottom: 10px;	
+	}
+
+	#one-time-setup ul {
+		margin-bottom: 15px;
+		border: 1px solid #C1DBD8;
+		width: 410px;
+	}
+
+	ul#qb-file-list {
+		border: none;	
+	}
+
+	#one-time-setup ul li {
+		display: list-item;	
+		list-style-type: none;
+		padding: 5px 0px 0px 10px;
+		width: 400px;
+		height: 35px;
+		margin: 0px 0px 0px 0px;
+	}
+
+	#one-time-setup ul li.width-adjustor {
+		width: 350px;	
+	}
+
+	.li-item-adjustor {
+		padding-top: 2px;
+		float: left;
+		font-size: 20px;
+	}
+
+	.hidden-upload-btn + .file-upload { 
+		float: right;
+		padding: 5px 10px 5px 10px;
+		font-size: 16px;
+	    color: white;
+	    background-color: #00AEEF;
+	    display: inline-block;
+		cursor: pointer;
+		box-shadow: 0px 3px 3px #666;
+	}
+
+	.hidden-upload-btn + .extract-label {
+		float: none;
+		padding: 11px 10px 8px;
+		font-size: 16px;
+	    color: white;
+	    background-color: #00AEEF;
+		cursor: pointer;
+		box-shadow: 0px 3px 3px #666;
+	}
+
+	.hidden-upload-btn:focus + .file-upload,
+	.hidden-upload-btn:hover + .file-upload, 
+	.hidden-upload-btn:focus + label,
+	.hidden-upload-btn:hover + label {
+		background-color: #1F7CA5;
+		box-shadow: 0px 0px 0px #666;
+	}
+
+	.hidden-upload-btn {
+		width: 0.1px;
+		height: 0.1px;
+		opacity: 0;
+		overflow: hidden;
+		position: absolute;
+		z-index: -1;
+	}
+
+	.green-check-mark {
+		margin-right: 7px;
+	}
+
+	.file-upload-success {
+		float: left;
+		padding-top: 1px;
+	}
+
+	.file-upload-success img {
+		margin-left: 15px;
+		padding-top: 1px;
+	}
+
+	.msg {
+		float: right;
+		padding: 5px 20px 0px 0px;
+	}
+
+	.success-msg {
+		color: green;
+		/*clear: both;*/
+	}
+
+	.success-msg.box {
+		border-radius: 4px;
+		border: 1px solid green;
+	}
+
+	#payroll-items-form {
+		text-align: left;	
+	}
+
+	ul#payroll-matching li:first-child {
+		background-color: #C1DBD8;	
+	}
+
+	ul#payroll-matching li.hours-matching-row {
+		width: 400px;
+	}
+
+	ul#payroll-matching li span.header-left, ul#payroll-matching li span.header-right {
+		font-size: 20px;
+		float: left;
+	}
+
+	ul#payroll-matching li span.header-right {
+		margin-left: 110px;
+	}
+
+	.tc-hours {
+		display: inline-block;
+		padding-top: 7px;
+	}
+
+	select.qb-codes {
+		height: 35px;
+		float: right;
+		margin: 0px 0px 0px 0px;
+		border: 1px solid #999;
+	}
+
+	#submit-extract {
+		width: 920px;
+		float: left;
+		margin-top: 20px;	
+	}
+	/********************************************************************************/
+
+	#placeholder-wrapper {
+		width: 400px;
+		min-height: 275px;
+		background-color: #fff;
+		float: left;
+		clear: left;
+		margin: 20px 0px 10px 0px;
+		text-align: center;
+	}
+
+	#wrapper div#placeholder-wrapper.part1 {
+		text-align: left;
+		border: none;
+	}
+
+	#wrapper div#placeholder-wrapper.part3 {
+		border: 1px solid #999;
+		padding-top: 10px;
+	}
+	#uploaded-file-name, #validation-msg, #match-names-msg {
+		margin: 0px 0px 10px 0px;
+		position: relative;
+		display: block;
+	}
+
+	#validation-msg, #match-names-msg {
+		width: 300px;
+		padding: 5px;
+		display: inline-block;
+	}
+
+	.success {
+		border: 1px solid green;
+	}
+
+	.error {
+		border: 1px solid #BA0F2A;
+	}
+
+	#employee-matching-wrapper {
+		width: 490px;
+		height: 300px;
+		background-color: #fff;
+		float: left;
+		clear: left;
+		margin-right: 10px;
+		border: 1px solid #C1DBD8;
+		overflow-x: hidden;
+		overflow-y: scroll;
+	}
+
+	ul#employee-matching li {
+		padding-left: 10px;
+	}
+
+	ul#employee-matching li:first-child {
+		background-color: #C1DBD8;
+		width: 480px;
+		margin-bottom: 7px;
+		height: 35px;
+		padding-top: 5px;
+	}
+
+	ul#employee-matching li span.header-left, ul#employee-matching li span.header-right {
+		font-size: 20px;
+		float: left;
+	}
+
+	ul#employee-matching li span.header-right {
+		margin-left: 200px;
+	}
+
+	ul#employee-matching li.name-matching-row {
+		width: 470px;
+		margin-bottom: 3px;
+	}
+
+	li.name-matching-row span.tc-name {
+		line-height: 35px;
+	}
+
+	li.name-matching-row select {
+		margin: 0px 10px 0px 0px;
+		height: 35px;
+		border: 1px solid #999;
+		float: right;
+	}
+
+	#sidebar-instructions {
+		width: 470px;
+		background-color: #eee;
+		float: right;
+		clear: right;
+		padding: 5px 5px 0px 10px;
+	}
+
+	#sidebar-instructions.width-adjustor2 {
+		width: 390px;
+	}
+
+	#sidebar-instructions h4 {
+		margin-bottom: 10px;	
+	}
+
+	#employee-matching-wrapper, #sidebar-instructions {
+		margin-top: 20px;	
+	}
+
+	/*********************************************************************************/
+	#setup-complete h4 {
+		clear: left;	
+	}
+
+	.btn-bar {
+		clear: left;
+		position: relative;
+		width: 920px;
+	}
+
+	#button-bar {
+		position: relative; 
+		width: 920px; 
+		height: 40px;
+		margin-top: 20px;
+	}
+
+	#button-bar.no-margin {
+		margin-top: 10px;
+	}
+
+	#next, #back {
+		height: 40px;
+		width: 67px;
+		font-size: 16px;
+		border: none;	
+		background-color: #00AEEF;
+		color: #fff;
+		box-shadow: 0px 3px 3px #666;
+	}
+
+	#save {
+		height: 40px;
+		width: 67px;
+		font-size: 16px;
+		border: none;
+		background-color: #1F7CA5;
+		color: #fff;
+		transition: all 0.5s ease;
+	}
+
+	#save.glow, #create-import.glow, #download-import.glow {
+		background-color: #00AEEF;
+		box-shadow: 0px 0px 5px 5px #3CECC0;
+	}
+
+	.confirm_changes {
+		-webkit-animation: flash .5s infinite alternate;
+	    animation: flash .5s infinite alternate;
+	}
+
+	#next.dim {
+		background-color: #1F7CA5;
+		box-shadow: none;
+	}
+
+	#files, #items, #names, #create-import, #download-import {
+		height: 40px;
+		font-size: 16px;
+		border: none;	
+		background-color: #00AEEF;
+		color: #fff;
+		padding: 0px 10px;
+		box-shadow: 0px 3px 3px #666;
+	}
+
+	#items, #names {
+		margin-left: 5px;	
+	}
+
+	#create-import, #download-import {
+		width: 240px;
+		margin: 0px auto;
+		position: relative;
+		display: block;
+	}
+
+	#next:hover, #back:hover, #save:hover, #files:hover, #items:hover, #create-import:hover, #names:hover, #download-import:hover {
+		background-color: #1F7CA5;
+		box-shadow: 0px 0px 0px #666;
+	}
+
+	#back { 
+		float: left;
+	}
+
+	#back::before { 
+		content: "< "; 
+	} 
+
+	#next {
+		float: right;
+	}
+
+	#next::after { 
+		content: " >"; 
+	}
+
+	.match-items-save-btn, .match-names-save-btn {
+		float: right;
+		margin-right: 10px;
+	}
+
+	button {
+		cursor: pointer;	
+	}
+
+	#download-import {
+		margin-top: 20px;
+	}
+
+	#placeholder-wrapper button.disabled, #button-bar button.disabled {
+		background-color: #999;
+		box-shadow: none;
+		cursor: default;	
+	}
+
+	#placeholder-wrapper button.disabled:hover, #button-bar button.disabled:hover {
+		background-color: #999;
+		cursor: default;
+	}
+
+	/***********************************************************************
+	*/
+
+	#helper-div-1 {
+		display: none;
+		position: relative;
+		margin: 0px auto;
+		width: 600px;
+		min-height: 200px;
+		z-index: 10;
+		background-color: #fff;
+		box-shadow: 0px 3px 5px 5px #666;
+	}
+
+	#helper-div-1 div {
+		position: absolute;
+		top: 0px;
+		padding: 10px;
+	}
+
+	#helper-div-1 div h2 {
+		margin-bottom: 10px;	
+	}
+
+	.close-btn {
+		height: 25px;
+		width: 75px;
+		background-color: #00AEEF;
+		color: white;
+		border: none;
+		font-size: 16px;
+		box-shadow: 0px 3px 3px #666;
+	}
+
+	.close-btn:hover {
+		background-color: #1F7CA5;
+		box-shadow: none;	
+	}
+
+
+	/**********************************************************************/
+	/******************* END INTEGRATION STYLES ***************************/
+	/**********************************************************************/
+
+	h1 {
+		font-size: 28px;
+		text-align: center;
+	}
+
+	h2 {
+		margin: 10px 15px 5px;
+    	color: #333;
+    	font-size: 25px;
+	}
+
+	p {
+        margin: 0px 15px 15px 15px;
+    }
+
+	.log-in-btn {
+		margin: auto;
+	    display: table;
+	    margin-top: 10px;
+	    font-size: 20px;
+	}
+
+	.log-in-btn button {
+		border-radius: 2px; padding: 4px; font-size: 16px; color: #fff; border: none; background: linear-gradient(#00AEEF 0%, #00AEEF 90%, #4e7687 90%, #4e7687 100%);
+	}
+
+	.log-in-btn button:hover {
+		background: linear-gradient(#4e7687 0%, #4e7687 90%, #4e7687 90%, #4e7687 100%);
+	}
+
+	ul#software {
+		width: 540px; 
+		margin: 0px auto;
+	}
+
+	ul#softwares li {
+		color: #fff;
+		font-size: 34px;
+		font-family: "Source Sans Pro Light";
+		top: 2px;
+		padding: 25px 25px 17px 25px;
+		width: 130px;
+		text-align: center;
+		margin: auto;
+    	display: inherit;
+	}
+
+	.disclaimer {
+		display: inline-block;
+    	margin: 30px 15px;
+		font-family: "Open Sans Regular";
+		font-size: 16px;
+		color: #666;
+		padding-top: 5px;
+		border-top: 1px solid #999;
+	}
+
+	.end-p {
+		margin-top: 15px;
+	}
+
+	
+}
+
+@media all and (min-width: 323px) {
+
+
+	.img-container {
+	    margin-top: 148px;
+	}
+
+
+}
+
+@media all and (min-width: 342px) {
+	
+
+	h1 {
+	    font-size: 38px;
+	}
+
+	h2 {
+		font-size: 29px;
+	}
+	
+	.img-container {
+	    margin-top: 140px;
+	}
+
+	.img-section {
+	    height: 192px;
+	}
+
+	#content img {
+		width: 314px;
+		margin-top: 48px;
+	}
+
+}
+
+@media all and (min-width: 417px) {
+
+
+	.img-container {
+	    margin-top: 97px;
+	}
+
+	#content img {
+	    width: 383px;
+	}
+
+	.img-section {
+	    height: 208px;
+	}
+
+	
+}
+
+@media all and (min-width: 432px) {
+
+
+	.img-container {
+	    margin-top: 60px;
+	}
+
+	
+}
+
+
+@media all and (min-width: 538px) {
+	
+
+	h1 {
+	    font-size: 50px;
+	}
+
+	h2, h2.coming-soon {
+	    font-size: 35px;
+	}
+
+
+	.img-container {
+		margin-top: 60px;
+	}
+
+	#content img {
+		margin-top: 30px;
+		width: 475px;
+	}
+
+}
+
+@media all and (min-width: 602px) {	
+
+
+	.img-container {
+		margin-top: 20px;
+	}
+
+	ul#softwares li {
+		display: inline-block;
+		margin: 0px -2px 20px -1px;
+
+	}
+
+	ul#softwares {
+	    width: 540px;
+	    margin: 0px auto;
+	}
+
+	#content img {
+	    margin-top: 25px;
+	    width: 568px;
+	}
+
+	.img-section {
+	    height: 230px;
+	}
+
+
+}
+
+@media all and (min-width: 769px) {	
+
+
+	#content img {
+	    margin-top: 2px;
+	    width: 715px;
+	}
+
+	.img-container {
+	    margin-top: -30px;
+	}
+
+
+	.log-in-btn {
+		display: block;
+		float: right;
+		margin-right: 15px;
+	}
+
+	h1{
+		float: left;
+		margin-left: 15px
+	}
+
+
+}
+
+@media all and (min-width: 860px) {
+}
+
+@media all and (min-width: 1060px) {
+
+	h1{
+		font-size: 50px; 
+	}
+
+	h2{
+		margin: 10px 0px 5px; 
+		color: #333; 
+		font-size: 35px;
+		margin-left: 15px
+	}
+}
